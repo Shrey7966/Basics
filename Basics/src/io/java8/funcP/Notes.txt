@@ -1,0 +1,99 @@
+1. Why Lambdas?
+* Enables Functional programming.
+* Readable , maintainable and consise code.
+* Easier to use API's and libraries.
+* Enables support for parallel processing.
+
+********************************************************************************
+2. FuncP vs OOP
+* Java is based on OOP, hence funcP cannot beat OOP, but
+its fair to use FuncP when its required.
+********************************************************************************
+
+3. Code in OOP
+* Everything is an object.
+* All code blocks are associated with classes & objects.
+********************************************************************************
+
+4. Illustration-1
+
+    public void greet(______){
+        ___________ ;
+    }
+********************************************************************************
+
+5. Illustration-2
+
+    public void greet(action){
+        action() ;
+    }
+********************************************************************************
+
+6. Functions as values
+
+    inline values-
+    EX- String s ="shreyas";
+
+    aBlockOfCode = {
+        ...
+        ...
+    }
+********************************************************************************
+
+7. Writing lambda expression
+
+aBlockOfCode = public void perform() 
+{
+System.out.println("Hello Shreyas !!");  
+}
+
+    * we can remove "public" access modifier as whoever is having
+    this variable can access this func hence NOT REQUIRED.
+
+    aBlockOfCode = void perform() 
+    {
+    System.out.println("Hello Shreyas !!");  
+    }
+
+    * already variable name is present hence, func name is NOT REQUIRED.
+
+    aBlockOfCode = void () 
+    {
+    System.out.println("Hello Shreyas !!");  
+    }
+
+    * Return type "void" is NOT REQUIRED as java compiler itself can identify return type.
+    aBlockOfCode = () 
+    {
+    System.out.println("Hello Shreyas !!");  
+    }
+
+    * introduction of arrow keys
+
+     aBlockOfCode = () ->
+    {
+    System.out.println("Hello Shreyas !!");  
+    }
+
+    *if its single line of code , then it can be reduced to,
+    
+    aBlockOfCode = () -> System.out.println("Hello Shreyas !!");  
+    
+********************************************************************************
+    
+ 8. Examples of Lambda Expressions:
+    
+    1. greetingFunction = ()->SOP("hello");
+    2. doubleNumberFunction =(int a) -> a*2;
+    3. addFunction = (int a, int b) ->a+b;
+    4. safeDivision = () ->
+    {
+    	if(b==0) return 0;
+   		 return a/b;
+    }
+    5.StringLength = (String name)->name.length();
+
+********************************************************************************
+
+    
+    
